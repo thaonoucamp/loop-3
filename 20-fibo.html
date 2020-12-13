@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>display-20-fibo</title>
+</head>
+<body>
+<script>
+    checkFibo();
+    function checkFibo() {
+        let number = +prompt("Hien thi bao nhieu so Fibonacci? ");
+        let num1 = 0;
+        let num2 = 1;
+        let num3;
+        document.write('Fibonacci Series: ' + number + ' <br>');
+        for (let i = 1; i <= number; i++) {
+            document.write(num1 + "<br>");
+            num3 = num1 + num2;
+            num1 = num2;
+            num2 = num3;
+        }
+    }
+
+
+
+</script>
+</body>
+</html>
