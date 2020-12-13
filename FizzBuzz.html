@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai-7</title>
+</head>
+<body>
+<script>
+    fizzBuzz();
+    function fizzBuzz() {
+        for (let i = 1; i <= 100; i++) {
+            if (i % 3 == 0) {
+               document.write(i+' Fizz'+'<br>');
+            }if (i % 5 == 0) {
+               document.write(i+' Buzz'+'<br>');
+            }if (i % 3 == 0 && i % 5 == 0 ) {
+                document.write(i+' FizzBuzz'+'<br>');
+            }
+        }
+    }
+</script>
+</body>
+</html>

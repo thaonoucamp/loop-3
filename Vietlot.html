@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai-8</title>
+    <style>
+        .Vietlot {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<button class="Vietlot" onclick="checkVietlot(1)" value="Play">Play</button>
+<script>
+    let num = 0;
+function checkVietlot(value) {
+    num += value;
+    let num1 = +prompt('Nhap so cua ban !');
+    let num2 = Math.floor(Math.random()* 100);
+    if (num1 === num2) {
+        alert(' Chuc mung ban da trung $1000000 !!!');
+        return ;
+    }else if (num1 > num2 || num1 < num2) {
+        alert(num2+' Chuc ban may man lan sau !');
+    }if (num == 3) {
+        alert('Nap tien de chon tiep nao nguoi ae cua toi ..!')
+    }
+}
+</script>
+</body>
+</html>
